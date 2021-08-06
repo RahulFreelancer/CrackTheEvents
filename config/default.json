@@ -1,0 +1,12 @@
+{
+    "dbConfig":{
+        "database":"crackevent",
+        "username":"postgres",
+        "password":"assignment",
+        "host": "localhost",
+        "dialect": "postgres"
+    },
+"admin":{
+    "username":"iamtheAdmin",
+    "password":"admin@18"}
+}
