@@ -77,7 +77,7 @@ try {
     req.body.password===config.get('admin.password'))?'admin':'user';
     const user = await User.create({...req.body,wallet:5000,role});
   
-    return res.send('user has been registered,navigate to /api/login to login');
+     return role==='admin'?res.send(`${req.body.username} is registered as Admin.Login to create event`):res.send('user has been registered,navigate to /api/login to login');
 } catch (e) {
     return res.status(501).end();
 }
